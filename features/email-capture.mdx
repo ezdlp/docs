@@ -1,0 +1,55 @@
+---
+title: 'Fan Email Capture'
+description: 'Collect email addresses from fans through your Smart Links'
+---
+
+# Fan Email Capture
+
+Building an email list is one of the best ways for artists to maintain direct contact with fans. NotNoise helps you capture fan emails directly through your Smart Links, so you can turn listeners into subscribers for your newsletter or updates. The **Fan Email Capture** feature allows you to add an email signup form to any Smart Link.
+
+## Enabling Email Capture
+
+When creating or editing a Smart Link, you'll find an option to enable an email collection form (this feature is available on Pro plan only). You can toggle on "Enable Email Capture" and customize the text:
+
+- **Form Headline:** A short phrase to grab attention. By default this is "Stay Updated" or something similar, but you could say "Join My Mailing List" or "Don't Miss an Update!" – whatever fits your voice.
+
+- **Form Description:** A sentence or two explaining what fans get by subscribing. The default is *"Subscribe to receive updates about new music and exclusive content."* You might tweak this, e.g., "Sign up to get my new singles before anyone else and exclusive behind-the-scenes."
+
+<Note>
+  This feature is only available to Pro users. If you are on the free tier, the option to enable email collection will be disabled or prompt you to upgrade.
+</Note>
+
+## Fan Experience
+
+When email capture is enabled, NotNoise will display the signup form on your Smart Link page. By default, it appears *below* the streaming platform buttons as an optional form. It includes:
+
+- The headline and description you set (or a default greeting like "Get updates from [Artist Name]" if you didn't customize it)
+- A simple email input field and a **Subscribe** button
+
+A fan visiting your Smart Link can enter their email and hit subscribe. The page will confirm their subscription (either by a little thank-you message or just clearing the form and showing a success toast). They can then proceed to click a music platform link – the form does not prevent using the link; it's not a gate but an added component.
+
+## Managing Email Subscribers
+
+Each submitted email is saved to your NotNoise account. Specifically, it is tied to the Smart Link and stored in the **email_subscribers** database. For you, this means:
+
+- In your dashboard, under **Email Subscribers** (this is a section accessible via the top navigation tabs on your dashboard), you will see a list of all emails collected across your Smart Links.
+
+- The list shows the subscriber's email, which release (Smart Link) they subscribed on, and the date they signed up.
+
+- The emails are ordered by most recent by default, so you can see new signups easily.
+
+- There's a handy **Export CSV** button in the Email Subscribers section. Clicking it will download a CSV file of your subscribers – containing columns for Email, Release, and Subscribed Date. This is useful for importing into your email sending platform (like Mailchimp, SendFox, etc.) or just keeping a backup.
+
+## Using Your Email List
+
+Now that you have fan emails, be sure to use them wisely! You might send a monthly newsletter with updates, tour announcements, or exclusive content to these subscribers. Because they signed up specifically for your content, they're likely to be highly engaged fans.
+
+NotNoise just provides the collection mechanism and storage – you would handle the actual email sending through your email marketing tool of choice.
+
+## Privacy Considerations
+
+- **No Duplicate Emails:** The system prevents duplicate signups on the same link.
+
+- **Privacy and Consent:** Since these are your fans, make sure to treat their email with care and comply with any relevant email regulations (e.g., include an unsubscribe option when you email them via your email platform).
+
+- **Optional Signup:** By default, the email form is optional (it sits under the links). This way, you won't annoy fans who just want to click through, but you still give the super-fans a chance to connect with you.
